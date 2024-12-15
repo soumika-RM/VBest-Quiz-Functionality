@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="title">vbest - quiz</div>
+
+  <div class="container">
+    <label for="classSelect">Select Class:</label>
+    <select id="classSelect" onchange="onClassSelect()">
+      <option value="">Select Class</option>
+      <option value="8th">8th</option>
+      <option value="9th">9th</option>
+      <option value="10th">10th</option>
+    </select>
+
+    <label for="subjectSelect">Select Subject:</label>
+    <select id="subjectSelect" onchange="onSubjectSelect()">
+      <option value="">Select Subject</option>
+    </select>
+
+    <label for="chapterSelect">Select Chapter:</label>
+    <select id="chapterSelect" onchange="onChapterSelect()">
+      <option value="">Select Chapter</option>
+    </select>
+
+    <label for="topicSelect">Select Topic (Optional):</label>
+    <select id="topicSelect">
+      <option value="">Select Topic</option>
+    </select>
+
+    <button id="submitBtn" onclick="submitAnswers()">Submit</button>
+
+    <div id="questionsContainer"></div>
+    <div id="resultContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
